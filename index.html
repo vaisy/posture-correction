@@ -1,143 +1,223 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-   
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
 
     <link rel="stylesheet" href="../posture-correction/style.css" />
-    <title></title>
+    <title>Body Centric Wellness - Home </title>
 </head>
-<body>
 
+<body>
     <header role="banner" id="header">
         <div class="container">
             <nav class="navbar" role="navigation">
                 <div class="container-fluid">
-                    <div class="logo">
+                    <div class="logo col-lg-4 col-xs-10">
                         <a href="#" class="logo__link logo__left">
-                            <img src="../posture-correction/img/logo.jpg" class="logo__image" style="max-height: 100px;
-                    height: 100px;
-                    width: 100px; " alt="Body Centric Wellness" title="Body Centric Wellness">
+                            <img src="../posture-correction/img/logo.jpg" class="logo__image" style="max-height: 125px;" alt="Body Centric Wellness" title="Body Centric Wellness">
 
-                            <div class="logo__summary">
+                            <div class="logo__summary" style="display:none;">
                                 <p class="logo__title">BODY CENTRIC WELLNESS</p>
-                                <p class="logo__description"><i>Better Posture - Better Health</i></p>
+                                <p class="logo__description hidden-xs"><i>Better Posture - Better Health</i></p>
                             </div>
                         </a>
                     </div>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <div class="res-menu"></div>
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                    <div class="res-menu-button col-lg-8 col-xs-2">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <div class="res-menu"></div>
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#" class="link-hover"><span><strong>Home</strong></span></a></li>
-                            <li class="active"><a href="#" class="link-hover"><span><strong>Services</strong></span></a></li>
+                            <li class="active"><a href="../posture-correction/index.html" class="link-hover"><span><strong>Home</strong></span></a></li>
+                            <li><a href="../posture-correction/about.html" class="link-hover"><span><strong>About</strong></span></a></li>
+                            <li class="dropdown">
+                                <a href="../posture-correction/services.html" class="link-hover dropdown-toggle" data-toggle="dropdown"><span><strong>Services <b class="caret"></b></strong></span></a>
+                                <ul class="dropdown-menu" id="menu1">
 
-                            <!--<li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Treatments</strong> <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#"><strong>Treatment 1</strong></a></li>
-                                    <li><a href="#"><strong>Treatment 2</strong></a></li>
-                                    <li><a href="#"><strong>Treatment 3</strong></a></li>
+                                    <li><a href="#"><strong>Advanced BioStructural Correction&#8482;</strong></a></li>
+                                    <li><a href="#"><strong>What is ABC&#8482;&#63;</strong></a></li>
                                 </ul>
-                            </li>-->
-                            <li><a href="#" class="link-hover"><span><strong>Contact</strong></span></a></li>
-                            <li><a href="#" class="link-hover"><span><strong>Book Now</strong></span></a></li>
+                            </li>
+                            <li><a href="../posture-correction/treatment-plans.html" class="link-hover"><span><strong>Treatment Plans</strong></span></a></li>
+                            <li><a href="../posture-correction/products.html" class="link-hover"><span><strong>Products</strong></span></a></li>
+                            <li><a href="../posture-correction/book-now.html" class="link-hover"><span><strong>Book Now</strong></span></a></li>
+                            <li><a href="../posture-correction/contact.html" class="link-hover"><span><strong>Contact</strong></span></a></li>
                         </ul>
-
-
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-
-
-    <div class="container-fluid">
-        <div class="carousel">
-            <div class="carousel-prev"></div>
-            <div class="carousel-next"></div>
-            <ul class="carousel-pagination">
-                <li class="carousel-bullet"></li>
-                <li class="carousel-bullet"></li>
-                <li class="carousel-bullet"></li>
-                <li class="carousel-bullet"></li>
-                <li class="carousel-bullet"></li>
-            </ul>
-            <ul class="carousel-container">
-                <li class="carousel-item">
-                    <div class="item-1"></div>
-                </li>
-                <li class="carousel-item">
-                    <div class="item-2"></div>
-                </li>
-                <li class="carousel-item">
-                    <div class="item-3"></div>
-                </li>
-                <li class="carousel-item">
-                    <div class="item-4"></div>
-                </li>
-                <li class="carousel-item">
-                    <div class="item-5"></div>
-                </li>
-            </ul>
+    <!-- Header Carousel -->
+    <div id="myCarousel" class="container-fluid carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img class="banner-img" src="../posture-correction/img/banner-1.jpg" alt="...">
+                <div id="overlay"></div>
+                <div class="carousel-caption">
+                    <div class="toggleCaption">
+                        <h3>Body Centric Wellness is a private healthcare provider specialising in delivering a revolutionary corrective technique known as <span class="banner-caption-inner">Advanced BioStructural Correction</span></h3>
+                    </div>
+                    <div class="toggleButton">
+                        <p>
+                            <a class="btn btn-default-outline btn-lg" role="button">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="banner-img" src="../posture-correction/img/banner-2.jpg" alt="...">
+                <div id="overlay"></div>
+                <div class="carousel-caption">
+                    <div class="toggleCaption">
+                        <h3>Body Centric Wellness is a private healthcare provider specialising in delivering a revolutionary corrective technique known as <span class="banner-caption-inner">Advanced BioStructural Correction</span> </h3>
+                    </div>
+                    <div class="toggleButton">
+                        <p>
+                            <a class="btn btn-default-outline btn-lg" role="button">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="banner-img" src="../posture-correction/img/banner-3.jpg" alt="...">
+                <div id="overlay"></div>
+                <div class="carousel-caption">
+                    <div class="toggleCaption">
+                        <h3>Body Centric Wellness is a private healthcare provider specialising in delivering a revolutionary corrective technique known as <span class="banner-caption-inner">Advanced BioStructural Correction</span></h3>
+                    </div>
+                    <div class="toggleButton">
+                        <p>
+                            <a class="btn btn-default-outline btn-lg" role="button">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Controls -->
+        <a class="left carousel-control" role="button" data-slide="prev" onclick="$('#myCarousel').carousel('prev')">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" role="button" data-slide="next" onclick="$('#myCarousel').carousel('next')">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
     </div>
-   
+
     <div class="container marketing">
         <div class="row">
-            <h1> Why Posture Correction? </h1>
+            <h3> <strong>Why is posture/structure so important? </strong></h3>
+            <div class="seprator"></div>
             <br /><br />
         </div>
         <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="col-lg-3">
+
+        <div class="row" style="padding-bottom:60px;">
+
+            <div class="col-lg-3 col-xs-12 icon-section">
                 <img class="img-circle" src="../posture-correction/img/muscle-pain.png" alt="Generic placeholder image" width="140" height="140">
-                <h2>Reduced low back pain</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3">
-                <img class="img-circle" src="../posture-correction/img/headaches.png" alt="Generic placeholder image" width="140" height="140">
-                <h2>Fewer headaches</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3">
-                <img class="img-circle" src="../posture-correction/img/digestion.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h2>Improved circulation and digestion</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                <h2>Why is posture so important?</h2>
+                <div class="container-text">
+                    <input id="ch1" type="checkbox">
+                    <label for="ch1" class="btn btn-default"></label>
+
+                    <div class="text">Ever heard the phrase...'you don't build your house on sand'? Sand is poor ground to build foundations upon for any building as it's walls and frame would move around and eventually fall apart. Similarly if your body frame (skeleton)
+                        is crooked or misaligned things just won't function properly and YOU begin to fall apart also. This misalignment or 'bones out of place in a direction the body cannot self correct because there are no bones pulling in the direction
+                        needed' is the root to almost all your health problems that are not cancer, infection or diabetes etc</div>
+                </div>
             </div>
-            <div class="col-lg-3">
+            <!-- /.col-lg-4 -->
+
+            <div class="col-lg-3 col-xs-12 icon-section">
+                <img class="img-circle" src="../posture-correction/img/headaches.png" alt="Generic placeholder image" width="140" height="140">
+                <h2>How Can ABC&#8482; Help You?</h2>
+                <div class="container-text">
+                    <input id="ch2" type="checkbox">
+                    <label for="ch2" class="btn btn-default"></label>
+                    <div class="text">ABC&#8482; can help a wide variety of ailments and pretty much anything structural in nature. Over the decades since ABC&#8482;'s development however it was discovered that other ailments not thought to be directly linked to structure
+                        would also improve. Below are some of the most common complaints.</div>
+                </div>
+            </div>
+            <!-- /.col-lg-4 -->
+
+            <div class="col-lg-3 col-xs-12 icon-section">
+                <img class="img-circle" src="../posture-correction/img/digestion.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>What to Expect</h2>
+                <div class="container-text">
+                    <input id="ch3" type="checkbox">
+                    <label for="ch3" class="btn btn-default"></label>
+                    <div class="text">Not all complaints are postural/structural in nature. Cancer, infection, diabetes and any diseases of that nature cannot be treated structurally. However you may be surprised at the amount that can be. Speak to our practitioner via
+                        phone or book a face to face consultation to discuss your body and it's complaints further. You can have the first rib manoeuvre demonstrated on you so you can know first hand the kind of results ABC&#8482; can deliver. No matter
+                        what your complaint ABC&#8482; will almost certainly help you breath better and improve your overall circulation.</div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-3 col-xs-12 icon-section">
                 <img class="img-circle" src="../posture-correction/img/lung.jpg" alt="Generic placeholder image" width="140" height="140">
                 <h2>Increased lung capacity</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
+
+                <div class="container-text">
+                    <input id="ch4" type="checkbox">
+                    <label for="ch4" class="btn btn-default"></label>
+                    <div class="text">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
+                        amet risus.</div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
         <!-- START THE FEATURETTES -->
         <!-- Video section -->
+
         <hr class="featurette-divider">
 
         <div class="row featurette ">
             <div class="col-md-12">
-                <h1 class="featurette-heading">Explanation Video <span class="text-muted">Video Description</span></h1><br /><br />
+                <h3 class="featurette-heading"> <strong>Why do we hurt? </strong></h3>
+                <div class="seprator"></div>
+                <br /><br />
+                <p>Please see the video below courtesy of fellow ABC&#8482; Practitioner and colleague Dr Jeff Aberle. Here he briefly outlines what is the main factor behind why our bodies breakdown and start causing us pain and discomfort and why we're
+                    never aware of it.</p>
                 <div id="video-section">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PRgu2wxE65c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PRgu2wxE65c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+        <hr class="featurette-divider">
+        <!-- Video section -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette ">
+            <div class="col-md-12">
+                <h3 class="featurette-heading"><strong>How is ABC&#8482; Done?</strong> </h3>
+                <div class="seprator"></div>
+                <br /><br />
+                <p>Please see the video below courtesy of fellow ABC&#8482; Practitioner and colleague Dr Jeff Aberle. Here he demonstrates.</p>
+                <div id="video-section">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PRgu2wxE65c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -146,14 +226,11 @@
         <!-- Video section -->
 
         <div class="row featurette book-now-main">
-            <!--<div class="col-md-12">
-        <h1 class="featurette-heading"> <span class="text-muted"></span></h1>
-        </div>-->
-            <div class="col-md-6">
+            <div class="col-md-6 hidden-xs">
                 <a href="#" class="button1">BOOK YOUR APPOINTMENT</a>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-xs-12">
                 <div class="overlay"></div>
                 <div class="table">
                     <h2 class="heading">
@@ -184,12 +261,7 @@
         <!-- /END THE FEATURETTES -->
         <!--Testimonials Section-->
         <div class="row featurette">
-            <!--<div class="col-md-12">
-        <h1 class="featurette-heading"> <span class="text-muted"></span></h1>
-        </div>-->
             <div class="col-md-12">
-
-
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3" id="testimonials-main">
@@ -201,7 +273,8 @@
                                     <div class="item active">
                                         <div class="row" style="padding: 20px">
                                             <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
-                                            <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                                            <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
                                             <div class="row">
                                                 <div class="col-sm-2">
                                                     <img src="http://demos1.showcasedemos.in/jntuicem2017/html/v1/assets/images/jack.jpg" class="img-responsive" style="width: 80px">
@@ -219,7 +292,8 @@
                                     <div class="item">
                                         <div class="row" style="padding: 20px">
                                             <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
-                                            <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                                            <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
                                             <div class="row">
                                                 <div class="col-sm-2">
                                                     <img src="http://demos1.showcasedemos.in/jntuicem2017/html/v1/assets/images/kiara.jpg" class="img-responsive" style="width: 80px">
@@ -237,11 +311,9 @@
                                 </div>
                             </div>
                             <div class="controls testimonial_control pull-right">
-                                <a class="left fa fa-chevron-left btn btn-default testimonial_btn" href="#carousel-example-generic"
-                                   data-slide="prev"></a>
+                                <a class="left fa fa-chevron-left btn btn-default testimonial_btn" href="#carousel-example-generic" data-slide="prev"></a>
 
-                                <a class="right fa fa-chevron-right btn btn-default testimonial_btn" href="#carousel-example-generic"
-                                   data-slide="next"></a>
+                                <a class="right fa fa-chevron-right btn btn-default testimonial_btn" href="#carousel-example-generic" data-slide="next"></a>
                             </div>
                         </div>
                     </div>
@@ -250,46 +322,26 @@
             <hr class="featurette-divider">
         </div>
 
+        <hr class="featurette-divider">
         <div class="row featurette ">
             <div class="col-md-12">
-                <h1 class="featurette-heading">How to find us? </h1><br /><br />
+                <strong>ABC&#8482; is now being practised worldwide. See map below to find your nearest certified ABC&#8482; Practitioner. </strong><br /><br />
                 <div id="map-section">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.2900788543025!2d-1.8133186846500555!3d52.51008924471669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bac8e1fcfc9b%3A0x59f04efdd66da089!2sThe%20Fort%20Dunlop%20Bldg%20Fort%20Parkway%2C%20Birmingham%20B24%209FD!5e0!3m2!1sen!2suk!4v1579737085299!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.2900788543025!2d-1.8133186846500555!3d52.51008924471669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bac8e1fcfc9b%3A0x59f04efdd66da089!2sThe%20Fort%20Dunlop%20Bldg%20Fort%20Parkway%2C%20Birmingham%20B24%209FD!5e0!3m2!1sen!2suk!4v1579737085299!5m2!1sen!2suk"
+                        width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen=""></iframe>
                 </div>
             </div>
 
         </div>
-
         <hr class="featurette-divider">
         <!--Pricing OR Hours of Operation-->
     </div>
-
-
     <footer id="footer">
         <div class="container">
             <nav class="navbar" role="navigation">
                 <div class="container-fluid">
-
-
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-footer">
-
-                        <!--<ul class="nav navbar-nav navbar-footer">
-                            <li class="active"><a href="#"><span><strong>Home</strong></span></a></li>
-                            <li class="active"><a href="#"><span><strong>Services</strong></span></a></li>
-
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>treatments</strong> <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#"><strong>treatment 1</strong></a></li>
-                                    <li><a href="#"><strong>treatment 2</strong></a></li>
-                                    <li><a href="#"><strong>treatment 3</strong></a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><span><strong>Contact</strong></span></a></li>
-                            <li><a href="#"><span><strong>Book Now</strong></span></a></li>
-                        </ul>-->
-
                         <div class="logo-footer">
                             <div class="social">
                                 <div id="facebook" class="social-icons"></div>
@@ -298,13 +350,13 @@
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </nav>
         </div>
-     
+
     </footer>
     <script src="../posture-correction/script.js"></script>
-
 </body>
+
 </html>
