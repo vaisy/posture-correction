@@ -10,6 +10,10 @@
 }
     */
 
+body {
+    position: inherit;
+}
+
 body,
 .logo__description,
 .table .btn p,
@@ -23,7 +27,7 @@ a.button1,
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .session,
 #generic_price_table .generic_content .generic_feature_list ul li,
 #generic_price_table .generic_content .generic_price_btn a {
-    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -97,6 +101,23 @@ a:hover {
 
 .social-icons {
     display: inline-block;
+}
+
+.what-to-expect {
+    width: 74%;
+    margin: 0 auto;
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#video-section {
+    text-align: center;
+}
+
+#video-section iframe {
+    width: 560px;
+    height: 315px;
 }
 
 
@@ -203,8 +224,82 @@ input:checked~div {
     width: 100%;
 }
 
+.banner-1 {
+    height: 100%;
+    position: relative;
+    background: url("../posture-correction/img/banner-1.png")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-2 {
+    height: 100%;
+    position: relative;
+    background: url("../posture-correction/img/banner-2.png")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-3 {
+    height: 100%;
+    position: relative;
+    background: url("../posture-correction/img/banner-3.png")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-4 {
+    height: 100%;
+    position: relative;
+    background: url("../posture-correction/img/banner-4.png")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-btn .btn-primary {
+    float: right;
+}
+
+.product-section {
+    padding: 15px;
+    margin-bottom: 25px;
+    transition: box-shadow .3s;
+    border-radius: 10px;
+    border: 1px solid #356a9c;
+    background: #fff;
+}
+
+.product-section:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.item {
+    width: 100%;
+    height: 300px;
+    min-height: 200px;
+    position: relative;
+}
+
+#carousel-thumb {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.d-block {
+    height: 450px;
+    width: 345px;
+}
+
+.product-img {
+    text-align: center;
+}
+
+.product-btn {
+    text-align: center;
+}
+
 .navbar-nav>li {
-    border-left: 1px solid #ebf4fb;
+    border-left: 0px solid #ebf4fb;
     margin-top: 15px;
 }
 
@@ -228,9 +323,14 @@ input:checked~div {
     -moz-transition: none !important;
 }
 
+article {
+    padding: 15px;
+    text-align: justify;
+}
+
 @media (max-width: 780px) {
     #header {
-        position: fixed;
+        position: absolute;
     }
     #overlay {
         display: none;
@@ -309,6 +409,10 @@ input:checked~div {
     }
     .icon-section {
         text-align: center;
+        height: 345px;
+    }
+    .text {
+        overflow: visible;
     }
     .icon-section>p {
         text-align: justify;
@@ -322,7 +426,18 @@ input:checked~div {
         text-transform: uppercase;
     }
     #video-section {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+    #video-section iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
     }
     .logo__summary {
         margin-left: 6px;
@@ -343,6 +458,17 @@ input:checked~div {
     .carousel-caption {
         display: none;
     }
+    .what-to-expect {
+        width: 96%;
+        margin: 0 auto;
+        border: 1px solid #e6e6e6;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.container-text>.btn-default {
+    display: none;
 }
 
 .banner-caption-inner {
@@ -385,13 +511,6 @@ input:checked~div {
     font-size: 26px;
     border: 2px solid #fff;
     padding: 8px;
-}
-
-#video-section {
-    border: 1px solid #e6e4e4;
-    height: 330px;
-    width: 100% !important;
-    margin: 0 auto;
 }
 
 .navbar-footer {
@@ -499,6 +618,14 @@ h3 {
 .item {
     position: relative;
     height: 400px;
+}
+
+.book-cover {
+    width: 22%;
+}
+
+.img-twists {
+    width: 30%;
 }
 
 
@@ -1010,7 +1137,7 @@ a:hover {
 }
 
 #generic_price_table {
-    margin: 180px 0 50px 0;
+    margin: 160px 0 50px 0;
 }
 
 .row .table {

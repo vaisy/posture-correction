@@ -37,7 +37,7 @@
 //    }
 //}, false);
 
-$(document).ready(function () {
+$(document).ready(function() {
 
     var carouselContainer = $('.carousel');
     var slideInterval = 5000000;
@@ -46,7 +46,7 @@ $(document).ready(function () {
         $('.toggleCaption').hide()
         var caption = carouselContainer.find('.active').find('.toggleCaption').addClass('animated fadeInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
 
-            function () {
+            function() {
                 $(this).removeClass('animated fadeInRight')
             });
         caption.slideToggle();
@@ -56,16 +56,38 @@ $(document).ready(function () {
         $('.toggleButton').hide()
         var button = carouselContainer.find('.active').find('.toggleButton').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
 
-            function () {
+            function() {
                 $(this).removeClass('animated fadeInUp')
             });
         button.slideToggle();
     }
     carouselContainer.carousel({
-        interval: slideInterval,
-        cycle: true,
-        pause: "hover"
-    })
+            interval: slideInterval,
+            cycle: true,
+            pause: "hover"
+        })
         .on('slide.bs.carousel slid.bs.carousel', toggleH).trigger('slide.bs.carousel')
         .on('slide.bs.carousel slid.bs.carousel', toggleC).trigger('slide.bs.carousel');
+
 });
+
+function HideModal(id) {
+    if (id == 1) {
+        $('#modalQuickView1').modal('hide');
+    } else if (id == 2) {
+
+        $('#modalQuickView2').modal('hide');
+    } else if (id == 3) {
+
+        $('#modalQuickView3').modal('hide');
+    } else if (id == 4) {
+
+        $('#modalQuickView4').modal('hide');
+    } else if (id == 5) {
+
+        $('#modalQuickView5').modal('hide');
+    } else if (id == 6) {
+
+        $('#modalQuickView6').modal('hide');
+    }
+}
