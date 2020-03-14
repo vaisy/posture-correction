@@ -35,7 +35,7 @@ a {
 }
 
 .navbar-nav>li>a {
-    color: #ebf4fb;
+    color: #ffff;
 }
 
 #header {
@@ -158,6 +158,8 @@ input:checked~div {
 
 .icon-section {
     text-align: center;
+    background: #fbfafa;
+    border: 1px solid #fff;
 }
 
 .btn-default {
@@ -227,7 +229,7 @@ input:checked~div {
 .banner-1 {
     height: 100%;
     position: relative;
-    background: url("../posture-correction/img/banner-1.png")no-repeat;
+    background: url("/img/banner-1.png")no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -235,7 +237,7 @@ input:checked~div {
 .banner-2 {
     height: 100%;
     position: relative;
-    background: url("../posture-correction/img/banner-2.png")no-repeat;
+    background: url("/img/banner-2.png")no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -243,7 +245,7 @@ input:checked~div {
 .banner-3 {
     height: 100%;
     position: relative;
-    background: url("../posture-correction/img/banner-3.png")no-repeat;
+    background: url("/img/banner-3.png")no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -251,7 +253,15 @@ input:checked~div {
 .banner-4 {
     height: 100%;
     position: relative;
-    background: url("../posture-correction/img/banner-4.png")no-repeat;
+    background: url("/img/banner-4.png")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-5 {
+    height: 100%;
+    position: relative;
+    background: url("/img/banner-5.jpg")no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -264,9 +274,9 @@ input:checked~div {
     padding: 15px;
     margin-bottom: 25px;
     transition: box-shadow .3s;
-    border-radius: 10px;
+    border-radius: 3px;
     border: 1px solid #356a9c;
-    background: #fff;
+    background: #f5f5f5;
 }
 
 .product-section:hover {
@@ -331,9 +341,6 @@ article {
 @media (max-width: 780px) {
     #header {
         position: absolute;
-    }
-    #overlay {
-        display: none;
     }
     .banner-img {
         top: 0px !important;
@@ -447,8 +454,8 @@ article {
         padding-top: 33px;
     }
     .carousel {
-        margin-top: 127px !important;
-        height: 162px;
+        margin-top: 106px !important;
+        height: 393px;
     }
     #header .container,
     .col-xs-10 {
@@ -456,7 +463,9 @@ article {
         padding-left: 0px !important;
     }
     .carousel-caption {
-        display: none;
+        top: 50% !Important;
+        width: 81% !Important;
+        text-align: center;
     }
     .what-to-expect {
         width: 96%;
@@ -464,6 +473,9 @@ article {
         border: 1px solid #e6e6e6;
         padding: 15px;
         margin-bottom: 20px;
+    }
+    .toggleCaption>p {
+        display: none;
     }
 }
 
@@ -540,7 +552,7 @@ html {
 }
 
 .book-now-main {
-    background-image: url(../posture-correction/img/book-now.jpg);
+    background-image: url(/img/book-now.jpg);
     background-size: cover;
     background-position: center;
     height: 375px;
@@ -552,6 +564,18 @@ html {
     background-size: cover;
 }
 
+.span-consultation {
+    font-size: 25px;
+    color: #fff;
+    padding: 48px;
+    text-align: end;
+}
+
+.txt-consultation {
+    text-align: end;
+    padding: 45px;
+}
+
 
 /*Buttons Styles*/
 
@@ -559,7 +583,7 @@ a.button1 {
     display: inline-block;
     padding: 0.45em 2.2em;
     border: 0.1em solid #FFFFFF;
-    margin: 0 0.3em 0.3em 0;
+    margin: 32px;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
@@ -598,7 +622,7 @@ h3 {
 }
 
 .carousel {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     margin-top: 102px;
     display: block;
 }
@@ -626,6 +650,25 @@ h3 {
 
 .img-twists {
     width: 30%;
+    border: 1px solid #356a9c;
+}
+
+.booking-section {
+    background: #3da8d1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border: 0px solid #ec0a0a;
+    right: 0;
+    margin: 0;
+    height: 127px;
+}
+
+.img-circle {
+    border: 1px solid #3da8d1;
+    box-shadow: 0px 0px 4px 1px #356a9c;
+    margin-top: 15px;
 }
 
 
@@ -679,7 +722,7 @@ h3 {
 
 .item-1 {
     /*background-color: #3498db;*/
-    background-image: url(../posture-correction/img/banner-1.jpg);
+    background-image: url(/img/banner-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -105px;
@@ -687,7 +730,7 @@ h3 {
 
 .item-2 {
     /*background-color: #B22222;*/
-    background-image: url(../posture-correction/img/banner-2.jpg);
+    background-image: url(/img/banner-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -105px;
@@ -695,7 +738,7 @@ h3 {
 
 .item-3 {
     /*background-color: #006400;*/
-    background-image: url(../posture-correction/img/banner-3.jpg);
+    background-image: url(/img/banner-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -35px;
@@ -703,7 +746,7 @@ h3 {
 
 .item-4 {
     /*background-color: #FFD700;*/
-    background-image: url(../posture-correction/img/banner-1.jpg);
+    background-image: url(/img/banner-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -105px;
@@ -711,7 +754,7 @@ h3 {
 
 .item-5 {
     /*background-color: #FF4500;*/
-    background-image: url(../posture-correction/img/banner-2.jpg);
+    background-image: url(/img/banner-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -105px;
@@ -838,7 +881,7 @@ h3 {
 }
 
 .testimonial_btn {
-    background-color: #373d4b !important;
+    background-color: #356a9c !important;
     color: #fff !important;
 }
 
@@ -1144,6 +1187,16 @@ a:hover {
     padding: 28px 0;
 }
 
+.head-text {
+    text-align: center;
+}
+
+.heading {
+    display: inline-block;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
 
 /*PRICE BODY CODE START*/
 
@@ -1151,6 +1204,8 @@ a:hover {
     overflow: hidden;
     position: relative;
     text-align: center;
+    border: 1px solid #356a9c;
+    padding: 12px;
 }
 
 #generic_price_table .generic_content .generic_head_price {
@@ -1263,6 +1318,13 @@ a:hover {
 @media (max-width: 767px) {
     #generic_price_table .generic_content {
         margin-bottom: 75px;
+    }
+    .book-cover,
+    .img-twists,
+    .img-skeleton,
+    .img-man-skeleton,
+    .img-whattoexpect {
+        width: 100%;
     }
 }
 
