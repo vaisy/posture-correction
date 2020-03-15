@@ -226,6 +226,30 @@ input:checked~div {
     width: 100%;
 }
 
+.contact-main-bg {
+    margin-top: 107px;
+    height: 308px !Important;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-position: 0px -268px !important;
+}
+
+.details-box {
+    height: 220px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: -67px;
+    background: #356a9c;
+    color: #fff;
+}
+
+.details-box h2 {
+    color: #fff;
+}
+
 .banner-1 {
     height: 100%;
     position: relative;
