@@ -402,6 +402,9 @@ article {
         opacity: 0.3;
         border-radius: 8px;
     }
+    .contact-main-bg {
+     background-position: center;
+    }
     .table {
         /* background: #fff; */
         width: 100% !important;
