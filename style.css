@@ -1364,6 +1364,9 @@ a:hover {
     #generic_price_table .generic_content {
         margin-bottom: 75px;
     }
+    .contact-main-bg {
+        background-position: center;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {}
