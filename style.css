@@ -307,6 +307,10 @@ input:checked~div {
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
+#testimonials .item {
+    height: 235px;
+}
+
 .item {
     width: 100%;
     height: 345px;
