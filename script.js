@@ -1,41 +1,9 @@
-//var carousel = document.querySelector('.carousel');
-//if (carousel != null)
-//    carousel.setAttribute('style', 'display:block;');
-//var container = carousel.querySelector('.carousel-container');
-//var prevBtn = carousel.querySelector('.carousel-prev');
-//var nextBtn = carousel.querySelector('.carousel-next');
-//var pagination = carousel.querySelector('.carousel-pagination');
-//var bullets = [].slice.call(carousel.querySelectorAll('.carousel-bullet'));
-//var totalItems = container.querySelectorAll('.carousel-item').length;
-//var percent = (100 / totalItems);
-//var currentIndex = 0;
+$('.faq li .question').click(function() {
+    $(this).find('.plus-minus-toggle').toggleClass('collapsed');
+    $(this).parent().toggleClass('active');
+});
 
-//function next() {
-//    slideTo(currentIndex + 1);
-//}
 
-//function prev() {
-//    slideTo(currentIndex - 1);
-//}
-
-//function slideTo(index) {
-//    index = index < 0 ? totalItems - 1 : index >= totalItems ? 0 : index;
-//    container.style.WebkitTransform = container.style.transform = 'translate(-' + (index * percent) + '%, 0)';
-//    bullets[currentIndex].classList.remove('active-bullet');
-//    bullets[index].classList.add('active-bullet');
-//    currentIndex = index;
-//}
-
-//bullets[currentIndex].classList.add('active-bullet');
-//prevBtn.addEventListener('click', prev, false);
-//nextBtn.addEventListener('click', next, false);
-
-//pagination.addEventListener('click', function (e) {
-//    var index = bullets.indexOf(e.target);
-//    if (index !== -1 && index !== currentIndex) {
-//        slideTo(index);
-//    }
-//}, false);
 
 $(document).ready(function() {
 
@@ -90,4 +58,22 @@ function HideModal(id) {
 
         $('#modalQuickView6').modal('hide');
     }
+}
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
 }
