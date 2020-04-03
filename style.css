@@ -357,6 +357,10 @@ input:checked~div {
     -moz-transition: none !important;
 }
 
+.item {
+    height: 393px;
+}
+
 article {
     padding: 15px;
     text-align: justify;
