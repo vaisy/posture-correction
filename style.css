@@ -21,10 +21,10 @@ a.button1,
 .table .btn p,
 #generic_price_table,
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head span,
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign,
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency,
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent,
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .session,
+#generic_price_table .generic_content .generic_head_price .price_tag .price .sign,
+#generic_price_table .generic_content .generic_head_price .price_tag .price .currency,
+#generic_price_table .generic_content .generic_head_price .price_tag .price .cent,
+#generic_price_table .generic_content .generic_head_price .price_tag .session,
 #generic_price_table .generic_content .generic_feature_list ul li,
 #generic_price_table .generic_content .generic_price_btn a {
     font-family: 'Open Sans', sans-serif;
@@ -1155,19 +1155,19 @@ a:hover {
     color: #525252;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign {
+#generic_price_table .generic_content .generic_head_price .price_tag .price .sign {
     color: #414141;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency {
+#generic_price_table .generic_content .generic_head_price .price_tag .price .currency {
     color: #414141;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent {
+#generic_price_table .generic_content .generic_head_price .price_tag .price .cent {
     color: #414141;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .session {
+#generic_price_table .generic_content .generic_head_price .price_tag .session {
     color: #414141;
 }
 
@@ -1179,10 +1179,11 @@ a:hover {
     color: #414141;
 }
 
-#generic_price_table .generic_content .generic_feature_list ul li:hover {
+
+/* #generic_price_table .generic_content .generic_feature_list ul li:hover {
     background-color: #E4E4E4;
     border-left: 5px solid #356a9c;
-}
+} */
 
 #generic_price_table .generic_content .generic_price_btn a {
     border: 1px solid #356a9c;
@@ -1264,22 +1265,22 @@ a:hover {
     text-transform: uppercase;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_price_tag {
+#generic_price_table .generic_content .generic_head_price .price_tag {
     padding: 0 0 20px;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price {
+#generic_price_table .generic_content .generic_head_price .price_tag .price {
     display: block;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign {
+#generic_price_table .generic_content .generic_head_price .price_tag .price .sign {
     display: inline-block;
     font-size: 28px;
     font-weight: 400;
     vertical-align: middle;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency {
+#generic_price_table .generic_content .generic_head_price .price_tag .price .currency {
     font-size: 60px;
     font-weight: 300;
     letter-spacing: -2px;
@@ -1288,14 +1289,20 @@ a:hover {
     vertical-align: middle;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent {
+#generic_price_table .generic_content .generic_head_price .price_tag .price .cent {
     display: inline-block;
     font-size: 24px;
     font-weight: 400;
     vertical-align: bottom;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .session {
+.plan-desc li {
+    list-style: none;
+    text-align: left;
+    padding: 5px;
+}
+
+#generic_price_table .generic_content .generic_head_price .price_tag .session {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0px;
