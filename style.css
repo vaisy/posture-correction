@@ -298,6 +298,11 @@ input:checked~div {
     background-position: center;
 }
 
+.img-road-to-recovery {
+    height: 400px;
+    width: 725px;
+}
+
 .product-btn .btn-primary {
     float: right;
 }
@@ -694,6 +699,10 @@ h3 {
 .img-twists {
     width: 30%;
     border: 1px solid #356a9c;
+}
+
+.img-banner-5 {
+    width: 45%;
 }
 
 .booking-section {
@@ -1366,6 +1375,10 @@ a:hover {
 @media (max-width: 320px) {}
 
 @media (max-width: 767px) {
+    .img-road-to-recovery {
+        width: auto;
+        height: 200px;
+    }
     .faq-heading {
         margin-top: 19px;
         padding-left: 15px;
