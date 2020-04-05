@@ -9,12 +9,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
 
     <link rel="stylesheet" href="/style.css" />
+
     <title>Body Centric Wellness - Treatment Plans </title>
+    <style>
+        .product-btn .btn-primary {
+            float: inherit;
+            border: none;
+            background-color: #fff;
+            padding: 2px 8px;
+            border-color: #fff;
+            margin-top: 5px;
+        }
+        
+        .btn-primary:hover {
+            background-color: #fff;
+            border-color: #fff;
+        }
+        
+        .btn-primary:focus {
+            outline: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -67,8 +87,14 @@
         </div>
     </header>
     <div id="generic_price_table" style="margin-top:120px;">
-        <div>
-            <img style="width: 100%; background-size: cover;" src="/img/road-to-recovery.jpg">
+
+
+        <div id="img-recovery">
+            <img style="height: 400px; width: 725px;" src="/img/road-to-recovery.jpg">
+        </div>
+        <div class="product-btn">
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalQuickView1"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalQuickView1"><img src="/img/zoom-icon.png" width="30px" height="30px"></button>            </button>
         </div>
         <section>
             <div class=" container">
@@ -359,7 +385,33 @@
 
             </div>
         </section>
+        <div class="modal fade" id="modalQuickView1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class=" col-lg-1" style="float: right; cursor: pointer;"><img id="btn-close-modal " src="/img/close.png " style="height: 40px; " onclick="HideModal(1); "></div>
+                            <div class="col-lg-12">
+                                <!--Carousel Wrapper-->
+                                <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+                                    <!--Slides-->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <img class="img-recovery w-100" src="/img/road-to-recovery.jpg" alt="road to recovery">
+                                        </div>
 
+                                    </div>
+
+                                </div>
+                                <!--/.Carousel Wrapper-->
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer id="footer">
@@ -376,7 +428,7 @@
                             </div>
                         </div>
                         <div>
-                            <span style="color: #fff;">Website designed and developed by: <a  href="https://vaisy.github.io/myportfolio/" style="text-decoration: underline;">Gul Awaiz</a></span>
+                            <span style="color: #fff;">Website designed and developed by: <a  href="https://vaisy.github.io/myportfolio/ " style="text-decoration: underline;">Gul Awaiz</a></span>
                         </div>
                     </div>
 
@@ -386,5 +438,6 @@
 
     </footer>
 </body>
+<script src="/script.js "></script>
 
 </html>

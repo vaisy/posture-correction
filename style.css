@@ -138,6 +138,8 @@ a:hover {
     position: relative;
 }
 
+
+/* 
 label {
     position: absolute;
     top: 100%;
@@ -157,7 +159,7 @@ input:checked+label:after {
 
 input:checked~div {
     height: 100%;
-}
+} */
 
 
 /*   ----------- Show more/less -----------   */
@@ -334,8 +336,16 @@ input:checked~div {
     width: 345px;
 }
 
+#img-recovery {
+    text-align: center;
+}
+
 .product-img {
     text-align: center;
+}
+
+.img-recovery {
+    height: 493px;
 }
 
 .product-btn {
