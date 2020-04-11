@@ -218,6 +218,7 @@ input:checked~div {
 
 .logo>a>img {
     vertical-align: inherit;
+    max-height: 105px;
 }
 
 .logo__summary {
@@ -506,6 +507,9 @@ article {
         left: 0;
         width: 100%;
         height: 100%;
+    }
+    .logo-image {
+        max-height: 105px;
     }
     .logo__summary {
         margin-left: 6px;
@@ -1388,6 +1392,10 @@ a:hover {
 @media (max-width: 320px) {}
 
 @media (max-width: 767px) {
+    .img-banner-5,
+    .img-excercise {
+        width: 100%;
+    }
     .img-road-to-recovery {
         width: auto;
         height: 200px;
