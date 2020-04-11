@@ -100,7 +100,7 @@ a:hover {
 .logo-footer {
     /* float: inherit;
     width: 100%; */
-    text-align: center;
+    text-align: right;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -236,11 +236,11 @@ input:checked~div {
 
 .contact-main-bg {
     margin-top: 107px;
-    height: 308px !Important;
+    height: 335px !Important;
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
-    background-position: 0px -268px !important;
+    /* background-position: 0px -268px !important; */
 }
 
 .details-box {
@@ -261,7 +261,7 @@ input:checked~div {
 .banner-1 {
     height: 100%;
     position: relative;
-    background: url("/img/banner-1.png")no-repeat;
+    background: url("/img/banner-1.png") no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -269,7 +269,7 @@ input:checked~div {
 .banner-2 {
     height: 100%;
     position: relative;
-    background: url("/img/banner-2.png")no-repeat;
+    background: url("/img/banner-2.png") no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -277,7 +277,7 @@ input:checked~div {
 .banner-3 {
     height: 100%;
     position: relative;
-    background: url("/img/banner-3.png")no-repeat;
+    background: url("/img/banner-3.png") no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -285,7 +285,7 @@ input:checked~div {
 .banner-4 {
     height: 100%;
     position: relative;
-    background: url("/img/banner-4.png")no-repeat;
+    background: url("/img/banner-4.png") no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -293,7 +293,7 @@ input:checked~div {
 .banner-5 {
     height: 100%;
     position: relative;
-    background: url("/img/banner-5.jpg")no-repeat;
+    background: url("/img/banner-5.jpg") no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -301,7 +301,7 @@ input:checked~div {
 .banner-6 {
     height: 100%;
     position: relative;
-    background: url("/img/banner-6.jpg")no-repeat;
+    background: url("/img/banner-6.jpg") no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
