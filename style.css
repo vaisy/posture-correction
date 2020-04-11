@@ -1396,6 +1396,9 @@ a:hover {
     .img-excercise {
         width: 100%;
     }
+    .logo-footer {
+        text-align: center;
+    }
     .img-road-to-recovery {
         width: auto;
         height: 200px;
