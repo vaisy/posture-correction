@@ -415,7 +415,8 @@ article {
         border: 0px solid;
     }
     .navbar-nav {
-        float: inherit;
+       float:right;
+        padding-top:0px;
     }
     .navbar-toggle {
         position: relative;
