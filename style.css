@@ -399,7 +399,12 @@ article {
     padding: 15px;
     text-align: justify;
 }
-
+@media (max-width: 1024px) {
+.navbar-nav {
+       float:right;
+        padding-top:0px;
+    }
+}
 @media (max-width: 780px) {
     #header {
         position: absolute;
@@ -415,8 +420,7 @@ article {
         border: 0px solid;
     }
     .navbar-nav {
-       float:right;
-        padding-top:0px;
+       float:inherit;
     }
     .navbar-toggle {
         position: relative;
