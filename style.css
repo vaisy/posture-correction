@@ -1720,6 +1720,10 @@ a:hover {
         height: 875px;
     }
 }
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #72c8e5;
+    border-color: #337ab7;
+}
 
 
 /* END----Faq styles*/
