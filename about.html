@@ -13,13 +13,30 @@
     </script>
     <script async="async" src="https://static.mobilemonkey.com/js/105415924507453.js"></script>
     <link rel="stylesheet" href="/style.css" />
+    <style>
+        .sticky-top {
+    position: static;
+}
+    @media (max-width:768px) {
+    .sticky-top {
+        transition: all 0.25s ease-in;
+        position: sticky;
+    }
+    
+    .stuck .sticky-top {
+        background-color: #222 !important;
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+    }
+}</style>
+    
     <title>Body Centric Wellness - About </title>
 </head>
 
 <body>
     <header role="banner" id="header">
         <div class="container">
-            <nav class="navbar" role="navigation">
+            <nav class="navbar sticky-top" role="navigation">
                 <div class="container-fluid">
                     <div class="logo col-lg-4 col-xs-10">
                         <a href="/index.html" class="logo__link logo__left">
