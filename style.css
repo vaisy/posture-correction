@@ -51,6 +51,7 @@ a {
     width: 100%;
     z-index: 20;
     border: 0px solid #dedbdb;
+    transition: 0.5s;
 }
 
 #footer {
