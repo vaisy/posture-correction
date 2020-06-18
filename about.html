@@ -194,18 +194,13 @@
     </footer>
     <script src="/script.js"></script>
     <script type="text/javascript">
-    var lastScrollTop=0;
-    navbar= document.getElementById('header');
-    window.addEventListener("scroll",function(){
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop) {
-            navbar.style.top = "-110px";
-        } else{
-            navbar.style.top = "0";
-        }
-        lastScrollTop = scrollTop;
-    })
-  
+   (new IntersectionObserver(function(e,o){
+    if (e[0].intersectionRatio > 0){
+        document.documentElement.removeAttribute('class');
+    } else {
+        document.documentElement.setAttribute('class','stuck');
+    };
+})).observe(document.querySelector('.trigger'));
 
 </script>
 </body>
