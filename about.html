@@ -194,6 +194,7 @@
     </footer>
     <script src="/script.js"></script>
     <script type="text/javascript">
+        $(document).ready(function () {
    (new IntersectionObserver(function(e,o){
     if (e[0].intersectionRatio > 0){
         document.documentElement.removeAttribute('class');
@@ -201,7 +202,7 @@
         document.documentElement.setAttribute('class','stuck');
     };
 })).observe(document.querySelector('.trigger'));
-
+});
 </script>
 </body>
 
